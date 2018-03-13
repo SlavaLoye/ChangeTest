@@ -90,16 +90,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="np1-hH-hXm">
                                 <rect key="frame" x="0.0" y="41" width="414" height="43"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gUn-JA-yFs">
-                                        <rect key="frame" x="132.33333333333334" y="15.666666666666664" width="150.00000000000003" height="21"/>
-                                        <string key="text">Currency Exchange
-</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.86750799417495728" green="0.67830222845077515" blue="0.2592797577381134" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fEo-zd-CAM">
-                                        <rect key="frame" x="349" y="14" width="57" height="22"/>
+                                        <rect key="frame" x="349" y="11" width="57" height="22"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="22" id="EQe-lY-5vM"/>
                                             <constraint firstAttribute="width" constant="57" id="w4j-OA-wXZ"/>
@@ -111,23 +103,31 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jC7-D2-3zs">
-                                        <rect key="frame" x="378" y="26" width="12" height="12"/>
+                                        <rect key="frame" x="378" y="23" width="12" height="12"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="12" id="8fi-36-lyy"/>
                                             <constraint firstAttribute="height" constant="12" id="W7W-ZP-y8A"/>
                                         </constraints>
                                         <state key="normal" image="Oval 521"/>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gUn-JA-yFs">
+                                        <rect key="frame" x="132" y="8" width="150.00000000000003" height="21"/>
+                                        <string key="text">Currency Exchange
+</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.86750799417495728" green="0.67830222845077515" blue="0.2592797577381134" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="43" id="00n-O5-gqC"/>
                                     <constraint firstAttribute="trailing" secondItem="jC7-D2-3zs" secondAttribute="trailing" constant="24" id="Dye-f9-xuu"/>
                                     <constraint firstAttribute="trailing" secondItem="fEo-zd-CAM" secondAttribute="trailing" constant="8" id="Giu-FB-zoa"/>
-                                    <constraint firstItem="fEo-zd-CAM" firstAttribute="top" secondItem="np1-hH-hXm" secondAttribute="top" constant="14" id="IYo-N3-w0e"/>
-                                    <constraint firstItem="jC7-D2-3zs" firstAttribute="top" secondItem="np1-hH-hXm" secondAttribute="top" constant="26" id="cSb-fX-eJT"/>
+                                    <constraint firstItem="fEo-zd-CAM" firstAttribute="top" secondItem="np1-hH-hXm" secondAttribute="top" constant="11" id="IYo-N3-w0e"/>
+                                    <constraint firstItem="jC7-D2-3zs" firstAttribute="top" secondItem="np1-hH-hXm" secondAttribute="top" constant="23" id="cSb-fX-eJT"/>
                                     <constraint firstItem="gUn-JA-yFs" firstAttribute="centerX" secondItem="np1-hH-hXm" secondAttribute="centerX" id="kaw-zK-gNo"/>
-                                    <constraint firstItem="gUn-JA-yFs" firstAttribute="centerY" secondItem="np1-hH-hXm" secondAttribute="centerY" constant="4.6666666666666643" id="pYE-Q1-afQ"/>
+                                    <constraint firstItem="gUn-JA-yFs" firstAttribute="centerY" secondItem="np1-hH-hXm" secondAttribute="centerY" constant="-3" id="pYE-Q1-afQ"/>
                                 </constraints>
                             </view>
                         </subviews>
