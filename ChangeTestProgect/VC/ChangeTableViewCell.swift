@@ -26,12 +26,6 @@ class ChangeTableViewCell: UITableViewCell {
         volumeLabel.text = "\(formatterVolume.string(from: NSNumber(value: change.volume!))!) Volume"
         
     }
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        layoutMargins = UIEdgeInsetsMake(10, 10, 10, 10)
-    }
 }
-
 
 
