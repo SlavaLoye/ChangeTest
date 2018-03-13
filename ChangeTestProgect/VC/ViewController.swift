@@ -37,7 +37,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         searchBarItem()
     }
 
-    // MARK:  @objc func updateTime()
+    // MARK:  @objc func reloadByTimer()
     @objc func reloadByTimer() {
         timer =  Timer.scheduledTimer(timeInterval: 15.0, target: self, selector: #selector(reloadData), userInfo: nil, repeats: true)
         reloadData()
