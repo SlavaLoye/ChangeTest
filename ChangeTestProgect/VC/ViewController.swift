@@ -39,7 +39,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     // MARK:  @objc func updateTime()
     @objc func reloadByTimer() {
-        timer =  Timer.scheduledTimer(timeInterval: 15, target: self, selector: #selector(reloadData), userInfo: nil, repeats: true)
+        timer =  Timer.scheduledTimer(timeInterval: 10.0, target: self, selector: #selector(reloadData), userInfo: nil, repeats: true)
         reloadData()
     }
 
@@ -69,6 +69,18 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             return cell
         } else {
             return ChangeTableViewCell()
+        }
+    }
+
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        // 1. set the initial state of the cell
+        cell.alpha = 0
+        let transform = CATransform3DTranslate(CATransform3DIdentity, -250, 20, 0)
+        cell.layer.transform = transform
+        // 2. UIView animation method to change to The final state of the cell
+        UIView.animate(withDuration: 1.0) {
+            cell.alpha = 1.0
+            cell.layer.transform = CATransform3DIdentity
         }
     }
 
