@@ -39,7 +39,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     // MARK:  @objc func updateTime()
     @objc func reloadByTimer() {
-        timer =  Timer.scheduledTimer(timeInterval: 10.0, target: self, selector: #selector(reloadData), userInfo: nil, repeats: true)
+        timer =  Timer.scheduledTimer(timeInterval: 15.0, target: self, selector: #selector(reloadData), userInfo: nil, repeats: true)
         reloadData()
     }
 
@@ -52,7 +52,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             print("Reload Data")
         }
     }
-    
+//    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+//        return 10
+//    }
+//    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+//        let headerView = UIView()
+//        headerView.backgroundColor = UIColor.clear
+//        return headerView
+//    }
+//
     //MARK: UITableViewDataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if searchController.isActive {
@@ -66,6 +74,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         if let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? ChangeTableViewCell {
             let changeUptade = (searchController.isActive) ? searchResult[indexPath.row] : newsChange[indexPath.row]
             cell.configureCell(changeUptade)
+            cell.backgroundColor = #colorLiteral(red: 0.8675079942, green: 0.6783022285, blue: 0.2592797577, alpha: 1)
+            cell.layer.borderColor  = #colorLiteral(red: 0.2587913573, green: 0.2588421106, blue: 0.2587881684, alpha: 1)
+            cell.layer.borderWidth = 2
+            cell.layer.cornerRadius = 8
+            cell.clipsToBounds = true
             return cell
         } else {
             return ChangeTableViewCell()
@@ -84,6 +97,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         }
     }
 
+
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         if searchController.isActive {
             return false
@@ -98,14 +112,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         tableView.tableHeaderView = searchController.searchBar
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-        searchController.searchBar.tintColor = #colorLiteral(red: 0.3597574234, green: 0.387168318, blue: 0.4494804144, alpha: 1)
-        searchController.searchBar.barTintColor = #colorLiteral(red: 0.1214051619, green: 0.1252874136, blue: 0.1377378106, alpha: 1)
-        tableView.tableHeaderView!.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-        searchController.searchBar.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        tableView.backgroundColor = #colorLiteral(red: 0.2587913573, green: 0.2588421106, blue: 0.2587881684, alpha: 1)
+        searchController.searchBar.tintColor = #colorLiteral(red: 0.2587913573, green: 0.2588421106, blue: 0.2587881684, alpha: 1)
+        searchController.searchBar.barTintColor = #colorLiteral(red: 0.2587913573, green: 0.2588421106, blue: 0.2587881684, alpha: 1)
+        tableView.tableHeaderView!.backgroundColor = #colorLiteral(red: 0.8675079942, green: 0.6783022285, blue: 0.2592797577, alpha: 1)
+        searchController.searchBar.backgroundColor = #colorLiteral(red: 0.2587913573, green: 0.2588421106, blue: 0.2587881684, alpha: 1)
         searchController.searchResultsUpdater = self
-        searchController.hidesNavigationBarDuringPresentation = true
-        searchController.dimsBackgroundDuringPresentation = false
+        searchController.hidesNavigationBarDuringPresentation = false
+        searchController.dimsBackgroundDuringPresentation = true
         searchController.obscuresBackgroundDuringPresentation = false
         searchController.searchBar.placeholder = "Search for tools and resources"
         searchController.searchBar.sizeToFit()
@@ -133,7 +147,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: #selector(reloadData), for: UIControlEvents.valueChanged)
         tableView.addSubview(refreshControl)
-        refreshControl.backgroundColor = #colorLiteral(red: 0.1174838915, green: 0.1213654056, blue: 0.133816123, alpha: 1)
+        refreshControl.backgroundColor = #colorLiteral(red: 0.2587913573, green: 0.2588421106, blue: 0.2587881684, alpha: 1)
         refreshControl.tintColor = #colorLiteral(red: 0.8675079942, green: 0.6783022285, blue: 0.2592797577, alpha: 1)
         reloadData()
     }
@@ -158,5 +172,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         reloadData()
         blueButton.isHidden = buttonChange.count == newsChange.count ? true : false
         print("Update")
+    }
+
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+
     }
 }
