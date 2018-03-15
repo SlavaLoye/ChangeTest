@@ -24,13 +24,7 @@ class ChangeTableViewCell: UITableViewCell {
         let formatterVolume = NumberFormatter()
         formatterVolume.numberStyle = .decimal
         volumeLabel.text = "\(formatterVolume.string(from: NSNumber(value: change.volume!))!) Volume"
-        imageViewIcon.tintColor = UIColor.black
-        imageViewIcon.tintColorDidChange()
-        imageViewIcon.layer.borderWidth = 1
-        imageViewIcon.layer.borderColor = UIColor(white: 1, alpha: 0.4).cgColor
-        imageViewIcon.clipsToBounds = true
-        imageViewIcon.layer.cornerRadius = 5
-        imageViewIcon.contentMode = .scaleAspectFill
+        
     }
 }
 
