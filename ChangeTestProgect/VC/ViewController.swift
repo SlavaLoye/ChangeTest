@@ -65,11 +65,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         if let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? ChangeTableViewCell {
             let changeUptade = (searchController.isActive) ? searchResult[indexPath.row] : newsChange[indexPath.row]
             cell.configureCell(changeUptade)
-            cell.backgroundColor = #colorLiteral(red: 0.8675079942, green: 0.6783022285, blue: 0.2592797577, alpha: 1)
-            cell.layer.borderColor  = #colorLiteral(red: 0.2587913573, green: 0.2588421106, blue: 0.2587881684, alpha: 1)
-            cell.layer.borderWidth = 2
-            cell.layer.cornerRadius = 8
-            cell.clipsToBounds = true
             return cell
         } else {
             return ChangeTableViewCell()
@@ -101,10 +96,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     fileprivate func searchBarItem() {
         searchController = UISearchController(searchResultsController: nil)
         tableView.tableHeaderView = searchController.searchBar
-        tableView.delegate = self
-        tableView.dataSource = self
-        tableView.backgroundColor = #colorLiteral(red: 0.2587913573, green: 0.2588421106, blue: 0.2587881684, alpha: 1)
-        searchController.searchBar.tintColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
+        searchController.searchBar.tintColor = #colorLiteral(red: 0.8675079942, green: 0.6783022285, blue: 0.2592797577, alpha: 1)
         searchController.searchBar.barTintColor = #colorLiteral(red: 0.2587913573, green: 0.2588421106, blue: 0.2587881684, alpha: 1)
         tableView.tableHeaderView!.backgroundColor = #colorLiteral(red: 0.8675079942, green: 0.6783022285, blue: 0.2592797577, alpha: 1)
         searchController.searchBar.backgroundColor = #colorLiteral(red: 0.2587913573, green: 0.2588421106, blue: 0.2587881684, alpha: 1)
@@ -139,7 +131,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         refreshControl.addTarget(self, action: #selector(reloadData), for: UIControlEvents.valueChanged)
         tableView.addSubview(refreshControl)
         refreshControl.backgroundColor = #colorLiteral(red: 0.2587913573, green: 0.2588421106, blue: 0.2587881684, alpha: 1)
-        refreshControl.tintColor = #colorLiteral(red: 0.8675079942, green: 0.6783022285, blue: 0.2592797577, alpha: 1)
+        refreshControl.tintColor = #colorLiteral(red: 0.792452991, green: 0.626996994, blue: 0.2581678033, alpha: 1)
         reloadData()
     }
 

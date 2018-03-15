@@ -18,28 +18,65 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="493351-money" translatesAutoresizingMaskIntoConstraints="NO" id="H0K-ed-pil">
-                                <rect key="frame" x="107" y="274" width="200" height="188"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Niderlandy" translatesAutoresizingMaskIntoConstraints="NO" id="n2g-uP-D46">
+                                <rect key="frame" x="38" y="482" width="90" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="188" id="EPk-I3-5R5"/>
+                                    <constraint firstAttribute="width" constant="90" id="T7v-nE-njw"/>
+                                    <constraint firstAttribute="height" constant="60" id="pAV-oI-SQv"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flag_grecii" translatesAutoresizingMaskIntoConstraints="NO" id="pDZ-aN-yG3">
+                                <rect key="frame" x="126" y="540" width="90" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="CRT-Ed-Ese"/>
+                                    <constraint firstAttribute="width" constant="90" id="URM-hM-SEf"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pery" translatesAutoresizingMaskIntoConstraints="NO" id="clY-XA-C5F">
+                                <rect key="frame" x="217" y="597" width="90" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="4yf-r8-gmT"/>
+                                    <constraint firstAttribute="width" constant="90" id="rf3-tG-ce4"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sweden_l" translatesAutoresizingMaskIntoConstraints="NO" id="zOl-uw-pm3">
+                                <rect key="frame" x="304" y="656" width="90" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="M16-IT-pY4"/>
+                                    <constraint firstAttribute="height" constant="60" id="wel-NQ-DrK"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kqN-eR-EqR">
-                                <rect key="frame" x="67" y="124" width="280" height="29"/>
+                                <rect key="frame" x="67" y="183" width="280" height="29"/>
                                 <string key="text">Currency Exchange
 </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="493351-money" translatesAutoresizingMaskIntoConstraints="NO" id="bbY-Xd-Zld">
+                                <rect key="frame" x="107" y="268" width="200" height="200"/>
+                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.86750799417495728" green="0.67830222845077515" blue="0.2592797577381134" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.38664579389999998" green="0.34555274250000001" blue="0.80772989989999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="H0K-ed-pil" firstAttribute="top" secondItem="kqN-eR-EqR" secondAttribute="bottom" constant="121" id="7Bh-ii-Jz3"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kqN-eR-EqR" secondAttribute="trailing" constant="67" id="QnM-a1-hn9"/>
-                            <constraint firstItem="H0K-ed-pil" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="kQ4-g0-cER"/>
-                            <constraint firstItem="H0K-ed-pil" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="lbZ-TC-SvT"/>
-                            <constraint firstItem="kqN-eR-EqR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="mHa-IJ-P9R"/>
+                            <constraint firstItem="pDZ-aN-yG3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="126" id="5Ok-Gw-ccT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zOl-uw-pm3" secondAttribute="bottom" constant="20" id="PWS-YU-kas"/>
+                            <constraint firstItem="n2g-uP-D46" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="38" id="RFs-kh-LE7"/>
+                            <constraint firstItem="kqN-eR-EqR" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="aAK-G0-t1r"/>
+                            <constraint firstItem="kqN-eR-EqR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="163" id="aM0-XX-l34"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="clY-XA-C5F" secondAttribute="bottom" constant="79" id="cW9-Js-Jlz"/>
+                            <constraint firstItem="clY-XA-C5F" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="217" id="h5K-Ua-DKH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pDZ-aN-yG3" secondAttribute="bottom" constant="136" id="hET-fk-ohf"/>
+                            <constraint firstItem="bbY-Xd-Zld" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="107" id="kCI-Ur-ybl"/>
+                            <constraint firstItem="n2g-uP-D46" firstAttribute="top" secondItem="bbY-Xd-Zld" secondAttribute="bottom" constant="14" id="kmy-t3-9hk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="n2g-uP-D46" secondAttribute="bottom" constant="194" id="l9E-xc-3Nq"/>
+                            <constraint firstItem="kqN-eR-EqR" firstAttribute="centerX" secondItem="bbY-Xd-Zld" secondAttribute="centerX" id="m28-e8-vMu"/>
+                            <constraint firstItem="zOl-uw-pm3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="304" id="qwf-vL-FaH"/>
+                            <constraint firstItem="kqN-eR-EqR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="uC0-8U-ImW"/>
+                            <constraint firstItem="bbY-Xd-Zld" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="veC-LF-CHU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -51,5 +88,9 @@
     </scenes>
     <resources>
         <image name="493351-money" width="200" height="188"/>
+        <image name="Niderlandy" width="180" height="120"/>
+        <image name="flag_grecii" width="563" height="375"/>
+        <image name="pery" width="83" height="55"/>
+        <image name="sweden_l" width="183" height="114"/>
     </resources>
 </document>
