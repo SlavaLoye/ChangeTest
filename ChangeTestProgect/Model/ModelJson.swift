@@ -8,8 +8,8 @@
 
 import Foundation
 
+//MARK: JsonChange
 struct JsonChange {
-    
     var name: String?
     var volume: Int?
     var amount: Double?

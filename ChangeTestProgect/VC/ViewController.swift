@@ -60,13 +60,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: ChangeTableViewCell.cellId, for: indexPath) as? ChangeTableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: ChangeTableViewCell.cellId, for: indexPath) as? ChangeTableViewCell else { return UITableViewCell()}
             let changeUptade = (searchController.isActive) ? searchResult[indexPath.row] : newsChange[indexPath.row]
             cell.configureCell(changeUptade)
             return cell
-        } else {
-            return ChangeTableViewCell()
-        }
     }
 
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
@@ -160,3 +157,4 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     }
 }
+
