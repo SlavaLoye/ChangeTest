@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		111BC0E990E5498B5698D89D /* Pods_ChangeTestProgect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EAB599D037F485DF2F65AF7 /* Pods_ChangeTestProgect.framework */; };
 		6C2FB34E2051DE6E00EA5B95 /* ChangeDataServise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2FB34D2051DE6E00EA5B95 /* ChangeDataServise.swift */; };
+		6C7AD31B20F6AECC005966C5 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7AD31A20F6AECC005966C5 /* CustomView.swift */; };
 		6CE438F320508D53005F1CFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE438F220508D53005F1CFB /* AppDelegate.swift */; };
 		6CE438F520508D53005F1CFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE438F420508D53005F1CFB /* ViewController.swift */; };
 		6CE438F820508D53005F1CFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CE438F620508D53005F1CFB /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 		169245E2B4CA421B110A6A4C /* Pods-ChangeTestProgect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChangeTestProgect.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChangeTestProgect/Pods-ChangeTestProgect.release.xcconfig"; sourceTree = "<group>"; };
 		6539C8BBB3AFDBC6A47D9FF1 /* Pods-ChangeTestProgect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChangeTestProgect.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChangeTestProgect/Pods-ChangeTestProgect.debug.xcconfig"; sourceTree = "<group>"; };
 		6C2FB34D2051DE6E00EA5B95 /* ChangeDataServise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeDataServise.swift; sourceTree = "<group>"; };
+		6C7AD31A20F6AECC005966C5 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		6CE438EF20508D53005F1CFB /* ChangeTestProgect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChangeTestProgect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CE438F220508D53005F1CFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6CE438F420508D53005F1CFB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 			children = (
 				6CE438F420508D53005F1CFB /* ViewController.swift */,
 				6CE4390B20508E90005F1CFB /* ChangeTableViewCell.swift */,
+				6C7AD31A20F6AECC005966C5 /* CustomView.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 				6CE438F520508D53005F1CFB /* ViewController.swift in Sources */,
 				6CE4390A20508E24005F1CFB /* ModelJson.swift in Sources */,
 				6CE438F320508D53005F1CFB /* AppDelegate.swift in Sources */,
+				6C7AD31B20F6AECC005966C5 /* CustomView.swift in Sources */,
 				6C2FB34E2051DE6E00EA5B95 /* ChangeDataServise.swift in Sources */,
 				6CE4390C20508E90005F1CFB /* ChangeTableViewCell.swift in Sources */,
 				6CE4390820508E0A005F1CFB /* Constants.swift in Sources */,
