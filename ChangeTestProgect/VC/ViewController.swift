@@ -20,8 +20,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     fileprivate var searchController: UISearchController!
     fileprivate var refreshControl: UIRefreshControl!
     fileprivate  var imageView = UIImageView()
-    fileprivate static let indentifier = "NewsViewController"
-    fileprivate let cellIdentifier = "Cell"
     fileprivate var newsChange = [JsonChange]()
     fileprivate var searchResult = [JsonChange]()
     fileprivate var timer: Timer?
@@ -62,7 +60,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? ChangeTableViewCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: ChangeTableViewCell.cellId, for: indexPath) as? ChangeTableViewCell {
             let changeUptade = (searchController.isActive) ? searchResult[indexPath.row] : newsChange[indexPath.row]
             cell.configureCell(changeUptade)
             return cell
@@ -138,7 +136,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     // MARK: fileprivate func spinerAction()
     fileprivate func spinerAction()  {
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        let spinnerImage = UIImage(named: "crypto_icons_98-512")
+        let spinnerImage = UIImage(named: "cryptoIcons")
         imageView.contentMode = .scaleAspectFill
         imageView.image = spinnerImage
         refreshControl.addSubview(imageView)

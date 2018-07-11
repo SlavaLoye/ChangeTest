@@ -9,6 +9,7 @@
 import Foundation
 
 struct JsonChange {
+    
     var name: String?
     var volume: Int?
     var amount: Double?
